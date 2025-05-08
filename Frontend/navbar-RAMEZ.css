@@ -1,0 +1,259 @@
+:root{
+  --background-color:#170d47;
+  --heading:#fffffe;
+  --button-text:#fffffe;
+  --button:#e45858;
+  --card-bg:#d1d1e9;
+  --highlight:#84f6ce;
+  --highlight-dark:#89baa8;
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+body{background-color: var(--background-color);}
+
+nav{
+  background:#fefefe65;
+  height: 80px;
+  width: 100%;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1000; 
+  transition: top 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+#cartLogoIn{
+  opacity: 0;
+  margin: 0 auto;
+  height: 140%;
+}
+
+#cartLogoIn:hover{
+  color:#6246ea;
+  background: #dddddd00;
+}
+
+.cart-container{
+  position: fixed;
+  display: none;
+opacity: 0; 
+  transition: all 0.3s 0.1s;
+}
+
+
+.cart-before-widge{
+  z-index: inherit;
+  position: fixed;
+  top: 10px;
+  right: 79px;
+  width: 70px;
+  height: 70px;
+  border-bottom-right-radius:25px ;
+  background-color: #fefefe00;
+  box-shadow: 10px 20px 0px 10px#ffffff;
+}
+
+.cart-before{
+  z-index: inherit;
+  position: fixed;
+  background-color:  #ffffff;
+  width: 70px;
+  height: 70px;
+  top: 10px;
+  right: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex ;
+}
+
+.cart{
+  z-index: inherit;
+  border-radius: 10PX;
+  border-top-right-radius: 0%;
+  margin: 0 auto;
+  position: fixed;
+  top: 80px;
+  right: 10px;
+  width:30vw;
+  height:70vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+}
+
+.products-container{
+  display: flex;
+  flex-direction: column;
+width: 100%;
+height: 100%;
+border: 1px black solid;
+line-height: 1.7;
+}
+
+.product{
+  display: flex;
+  width: 100%;
+  height:12vh;
+}
+
+.product-img{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  flex:2;
+}
+
+.product-desc{
+  height: 100%;
+  flex:3;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product-btns{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+}
+
+.product-btns ul li{
+  height: 5vh;
+ display: block;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ line-height: 0%;
+}
+.cart-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.buy-btn{
+  font-size: large;
+  color: aliceblue;
+  font-weight: 500;
+  border-radius: 5px;
+  width: 23vw;
+  height:10vh;
+  background-color: chocolate;
+}
+
+label.logo{
+  color: #0d1765;
+  font-size: 50px;
+  padding: 0 50px;
+  font-weight: bold;
+  transition: all 300ms 100ms;
+}
+
+.logo:hover{
+color:  #d4bfff;
+transform: scale(1.5);
+
+}
+nav>ul{
+  float: right;
+  margin-right: 20px;
+}
+nav>ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav>ul li a{
+  font-weight: 700;
+  color: #2b2c34;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  color: white;
+  background: #6246ea;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .cart-container{
+display: none; 
+opacity: 0; 
+}
+
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #dddddd;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #6246ea;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+nav> ul >li i.fa-user {
+  font-size: 20px; 
+  padding: 0 10px; 
+  line-height: 80px; 
+}
