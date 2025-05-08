@@ -1,0 +1,2 @@
+# ZelleXY
+ZelleXY simplifies online commerce by helping small businesses create and manage digital storefronts with ease. It boosts visibility, offers intuitive search and browsing for customers, and builds trust through verified profiles and transparent reviews. Business owners also benefit from performance insights via an analytics dashboard, enabling smarter marketing decisions. Supporting both product and service providers, ZelleXY offers an inclusive platform for diverse online ventures.
