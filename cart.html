@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="cart.css">
+  <script src="/models/index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="navbar-RAMEZ.css">
+  <link rel="stylesheet" href="browse-search-RAMEZ.css">
+
+  <script src="script-RAMEZ.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">ZelleXY</label>
+
+    <ul>
+      <li><a class="active" href="homepage.html">Home</a></li>
+      <li><a href="browse.html">Shop Now</a></li>
+      <li><a href="register.html">sign up</a></li>
+      <li><a href="contact us.html">Contact</a></li>
+      <li><a href="customer-profile.htm"><i class="far fa-user"></i></a></li>
+      <li><a href="browse-search.html"><i class="fas fa-search"></i></a></li>
+      <li>
+        <div class="cart-container">
+          <div class="cart-before-widge"></div>
+          <div class="cart-before">
+            <a id="cartLogoIn" onclick="cartOpacity()">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+          <div class="cart">
+            <div class="products-container">
+              <div class="product">
+
+                <div class="product-img">
+                  <img src="product-placeholder.png" alt="" height="50px">
+                </div>
+                <div class="product-desc"><h3 class="product-name">product 1</h3>
+                this product is for kids
+                </div>
+                <div class="product-btns">
+                  <ul>
+                    <li><a class="product-btn fas fa-edit"></a></li>
+                    <li><a class="product-btn fas fa-trash"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product">
+
+                <div class="product-img">
+                  <img src="product-placeholder.png" alt="" height="50px">
+                </div>
+                <div class="product-desc"><h3 class="product-name">product 1</h3>
+                this product is for kids
+                </div>
+                <div class="product-btns">
+                  <ul>
+                    <li><a class="product-btn fas fa-edit"></a></li>
+                    <li><a class="product-btn fas fa-trash"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product">
+
+                <div class="product-img">
+                  <img src="product-placeholder.png" alt="" height="50px">
+                </div>
+                <div class="product-desc"><h3 class="product-name">product 1</h3>
+                this product is for kids
+                </div>
+                <div class="product-btns">
+                  <ul>
+                    <li><a class="product-btn fas fa-edit"></a></li>
+                    <li><a class="product-btn fas fa-trash"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="cart-label">
+              <h2 class="total">total: 25$</h2>
+              <div class="cart-btns">
+                
+                    <button class="buy-btn">Buy</button>
+                
+                    <a class=" fas fa-trash clear" href="#"></a>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <a id="cartLogo" onclick="cartOpacity()">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class="cart-page-container">
+    <div class="cart-products-container">
+      <div class="cart-product product">
+
+        <div class="product-img">
+          <img src="product-placeholder.png" alt="" height="70px">
+        </div>
+        <div class="product-desc"><h3 class="product-name">product 1</h3>
+        this product is for kids
+        </div>
+        <div class="product-btns">
+          <ul>
+            <li><a class="product-btn fas fa-edit"></a></li>
+            <li><a class="product-btn fas fa-trash"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cart-product product">
+
+        <div class="product-img">
+          <img src="product-placeholder.png" alt="" height="70px">
+        </div>
+        <div class="product-desc"><h3 class="product-name">product 2</h3>
+        this product is for kids
+        </div>
+        <div class="product-btns">
+          <ul>
+            <li><a class="product-btn fas fa-edit"></a></li>
+            <li><a class="product-btn fas fa-trash"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cart-product product">
+
+        <div class="product-img">
+          <img src="product-placeholder.png" alt="" height="70px">
+        </div>
+        <div class="product-desc"><h3 class="product-name">product 3</h3>
+        this product is for kids
+        </div>
+        <div class="product-btns">
+          <ul>
+            <li><a class="product-btn fas fa-edit"></a></li>
+            <li><a class="product-btn fas fa-trash"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cart-product product">
+
+        <div class="product-img">
+          <img src="product-placeholder.png" alt="" height="70px">
+        </div>
+        <div class="product-desc"><h3 class="product-name">product 4</h3>
+        this product is for kids
+        </div>
+        <div class="product-btns">
+          <ul>
+            <li><a class="product-btn fas fa-edit"></a></li>
+            <li><a class="product-btn fas fa-trash"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="payment-container">
+      <div class="visa-card">
+        <div class="logoContainer">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0 0 48 48"
+            class="svgLogo">
+            <path fill="#ff9800" d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"></path>
+            <path fill="#d50000" d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"></path>
+            <path fill="#ff3d00"
+              d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z">
+            </path>
+          </svg>
+        </div>
+        <div class="number-container">
+          <label class="input-label" for="cardNumber">CARD NUMBER</label>
+          <input class="inputstyle" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" name="cardNumber" type="text" />
+        </div>
+
+        <div class="name-date-cvv-container">
+          <div class="name-wrapper">
+            <label class="input-label" for="holderName">CARD HOLDER</label>
+            <input class="inputstyle" id="holderName" placeholder="NAME" type="text" />
+          </div>
+
+          <div class="expiry-wrapper">
+            <label class="input-label" for="expiry">VALID THRU</label>
+            <input class="inputstyle" id="expiry" placeholder="MM/YY" type="text" />
+          </div>
+          <div class="cvv-wrapper">
+            <label class="input-label" for="cvv">CVV</label>
+            <input class="inputstyle" placeholder="***" maxlength="3" id="cvv" type="password" />
+          </div>
+        </div>
+      </div>
+
+      <form action="" class="product-info-form">
+        <input type="text" class="order-first-name" placeholder="  order first name">
+        <input type="text" class="order-last-name" placeholder=" order last name">
+        <input type="text" class="zip-code" placeholder="  zip code">
+        <input type="text" class="phone" placeholder=" phone number">
+        <textarea type="text" class="product-description">
+          address
+        </textarea>
+      </form>
+    </div>
+  </div>
+  <button class="place-order">place order <span class="fa-arrow"></span></button>
+
+
+
+</body>
+
+</html>
