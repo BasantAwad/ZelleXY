@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/BasantAwad/BasantAwad/main/assets/basant-terminal-banner.png" alt="Terminal-inspired project banner" width="100%" />
+</p>
+
 # ZelleXY
 
 A software-engineering project for exploring application structure, data flow, and user-facing behavior through a focused implementation. The repository is maintained as part of Basant Awad's collection of academic and practical projects.
